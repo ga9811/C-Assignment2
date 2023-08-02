@@ -1,0 +1,25 @@
+﻿<Window x:Class="RestApiFruitWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestApiFruitWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="fruitList" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="143,270,207,48" Width="NaN"/>
+        <TextBox x:Name="ProductName" HorizontalAlignment="Left" Margin="143,94,0,0" TextWrapping="Wrap" Text="name" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ProductID" HorizontalAlignment="Left" Margin="143,130,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Amount" HorizontalAlignment="Left" Margin="143,168,0,0" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Price" HorizontalAlignment="Left" Margin="143,200,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Fruit Database Connection with Rest" HorizontalAlignment="Left" Height="50" Margin="143,25,0,0" VerticalAlignment="Top" Width="544" FontWeight="Bold" HorizontalContentAlignment="Center" FontSize="24"/>
+        <Button x:Name="AddBtn" Content="ADD" HorizontalAlignment="Left" Margin="415,88,0,0" VerticalAlignment="Top" Width="97" FontWeight="Bold" Click="AddBtn_Click"/>
+        <Button x:Name="ListAllBtn" Content="LIST" HorizontalAlignment="Left" Margin="415,124,0,0" VerticalAlignment="Top" Width="97" FontWeight="Bold" Click="ListAllBtn_Click"/>
+        <Button x:Name="UpdateBtn" Content="UPDATE" HorizontalAlignment="Left" Margin="415,166,0,0" VerticalAlignment="Top" Width="97" FontWeight="Bold" Click="UpdateBtn_Click"/>
+        <Button x:Name="DeleteBtn" Content="DELETE" HorizontalAlignment="Left" Margin="415,201,0,0" VerticalAlignment="Top" Width="97" FontWeight="Bold" Click="DeleteBtn_Click"/>
+        <Button x:Name="SearchBtn" Content="SEARCH" HorizontalAlignment="Left" Margin="292,130,0,0" VerticalAlignment="Top" Width="96" FontWeight="Bold" Click="SearchBtn_Click"/>
+        <Label x:Name="Responselb" Content="Label" HorizontalAlignment="Left" Height="40" Margin="546,94,0,0" VerticalAlignment="Top" Width="200" Foreground="#FFF80707" Visibility="Hidden"/>
+        <Button x:Name="SaleBtn" Content="SALE" HorizontalAlignment="Left" Height="26" Margin="53,47,0,0" VerticalAlignment="Top" Width="82" Foreground="#FFFB0707" Background="#FF030B00" Click="SaleBtn_Click"/>
+
+    </Grid>
+</Window>

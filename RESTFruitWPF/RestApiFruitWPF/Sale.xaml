@@ -1,0 +1,22 @@
+﻿<Window x:Class="RestApiFruitWPF.Sale"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestApiFruitWPF"
+        mc:Ignorable="d"
+        Title="Sale" Height="450" Width="800">
+    <Grid>
+        <Label Content="Sale" HorizontalAlignment="Left" Height="56" Margin="323,33,0,0" VerticalAlignment="Top" Width="119" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24"/>
+        <Label Content="Produnct ID" HorizontalAlignment="Left" Height="28" Margin="205,95,0,0" VerticalAlignment="Top" Width="83"/>
+        <Label Content="Weight" HorizontalAlignment="Left" Height="28" Margin="436,94,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.5,1.809"/>
+        <TextBox x:Name="IdText" HorizontalAlignment="Left" Height="28" Margin="304,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
+        <TextBox x:Name="WeightText" HorizontalAlignment="Left" Height="28" Margin="507,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101"/>
+        <Button x:Name="SaleBtn" Content="SALE" HorizontalAlignment="Left" Height="28" Margin="645,95,0,0" VerticalAlignment="Top" Width="56" Click="SaleBtn_Click"/>
+        <TextBlock x:Name="TextBlock" HorizontalAlignment="Left" Height="203" Margin="28,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193"/>
+        <Button x:Name="TotalBtn" Content="Total" HorizontalAlignment="Left" Height="27" Margin="382,134,0,0" VerticalAlignment="Top" Width="281" Background="#FF68FC07" FontSize="16" FontWeight="Bold" BorderBrush="#FF68FC07" Foreground="#FFF60707" Click="TotalBtn_Click"/>
+        <Button x:Name="ListAllBtn" Content="LIST" HorizontalAlignment="Left" Margin="248,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.878,-0.429" Width="88" FontWeight="Bold" Click="ListAllBtn_Click"/>
+        <DataGrid x:Name="fruitList" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="251,236,99,82" Width="NaN"/>
+
+    </Grid>
+</Window>
